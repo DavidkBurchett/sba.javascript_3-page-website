@@ -6,3 +6,15 @@
 h1{ 
     font-family: cursive;
 }
+
+p{
+    font-family: monospace;
+}
+
+#ball{
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+}

@@ -28,10 +28,22 @@
 
 <body> <!-- body begins here -->
 
+
+    <!-- Top Banner -->
 	<div class="Banner">
     <h1 class="page-header"> The Game! <br> <small class="page-header"> Have fun! </small> </h1>
   </div>
 
+
+
+  <!-- Game Square -->
+  <div style="position: relative; width: 50vw; height: 50vh; background-color: black; left: 25vw;">
+    <span id="ball"></span>
+  </div>
+
+  <span style="position: relative; left: 45vw;"><button onclick="changeColor()">Change Ball Color</button></span>
+
+  <!-- Bottom Buttons -->
   <div class="row" style="margin-top: 20vh">
     <div class="col-md-2"></div>
     <div class="col-md-2">
@@ -48,6 +60,7 @@
   <!-- ====================================================== -->
   <footer>
     <!-- footer of page begins here -->
+    <script type="text/javascript" src="./js/scripting.js"></script>
     <script type="text/javascript" src="./js/footer-functions.js"></script>
   </footer> <!-- footer of page ends here -->
   <!-- ====================================================== -->
