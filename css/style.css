@@ -12,6 +12,10 @@ p{
     line-height: 1.7;
 }
 
+#dropDown{}
+#instructionsP{}
+#gif{}
+
 #ball{
     height: 25px;
     width: 25px;

@@ -33,7 +33,24 @@
     <h1 class="page-header"> Instructions <br> <small class="page-header"> Learn what the game is! </small> </h1>
   </div>
 
+  <!-- description and gif -->
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-5" style="margin-top: 5vh;" id="">
+      <p id="instructionsP">
+        This is Atari Breakout, a retro game that was very well renown, and still is even present today. You can even play the game in full with a simple <a target=_blank href=https://elgoog.im/breakout/>google search</a>. The game i was intending to design was going to either be This or Pong(read more about pong by changing the dropdown). This point of the game is to destroy all of the blocks in the upper level using the bar along the bottom to bounce the ball into the blocks. the game gets faster the further you advance, and once you destroy all of the blocks you progress to the next level.
+      </p>
 
+      <select name="games" id="dropDown" onchange="changeParagraph()">
+        <option value="atari">Atari Breakout</option>
+        <option value="pong">Pong</option>
+      </select>
+      
+    </div>
+    <div class="col-md-5" style="margin-top: 5vh;" id="gif">
+      <img src="./img/Atari-Breakout.gif">
+    </div>
+  </div>
 
   <!-- Bottom Buttons -->
   <div class="row" style="margin-top: 20vh">
@@ -41,8 +58,15 @@
     <div class="col-md-2">
       <button onclick="window.location.href='./overview.html';"> To Overview! </button>
     </div>
-    <div class="col-md-2"></div>
-    <div class="col-md-2"></div>
+    <div class="col-md-3">
+      <form name="emailForm" action="#">
+        <label for="email">Email:</label>
+        <input type="text" name="email">
+        <input type="submit" value="Submit" onclick="ValidateEmail(document.emailForm.email)">
+      </form>
+      If you'd like updates, please enter a valid email!
+      <br>(will not actually log email)
+    </div>
     <div class="col-md-2">
       <button onclick="window.location.href='./game.html';"> To Game! </button>
     </div>
@@ -52,6 +76,7 @@
   <!-- ====================================================== -->
   <footer>
     <!-- footer of page begins here -->
+    <script type="text/javascript" src="./js/scripting.js"></script>
     <script type="text/javascript" src="./js/footer-functions.js"></script>
   </footer> <!-- footer of page ends here -->
   <!-- ====================================================== -->
