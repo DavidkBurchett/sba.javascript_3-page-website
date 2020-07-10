@@ -12,9 +12,14 @@ p{
     line-height: 1.7;
 }
 
+table, th, td {
+    border: 2px solid black;
+}
+
 #dropDown{}
 #instructionsP{}
 #gif{}
+#scoreTable{}
 
 #ball{
     height: 25px;

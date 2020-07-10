@@ -13,8 +13,7 @@ function changeParagraph() {
     }
 }
 
-function ValidateEmail(mail) 
-{
+function ValidateEmail(mail) {
     var mailRegex = /\S+@\S+\.\S+/;
  if (mail.value.match(mailRegex))
   {
@@ -22,6 +21,18 @@ function ValidateEmail(mail)
   }
     alert("You have entered an invalid email address!")
     return (false)
+}
+
+function addScore(score){
+    while(!(-Infinity < score && score < Infinity)){
+        score = prompt("please enter a valid score")
+    }
+    var table = document.getElementById("scoreTable")
+    var row = table.insertRow(1);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    cell1.innerHTML = "Guest User";
+    cell2.innerHTML = score;
 }
 
 var ball = document.getElementById("ball");

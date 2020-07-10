@@ -57,6 +57,38 @@
     </div>
     <div class="col-md-2"></div>
   </div>
+
+  <!-- Score Board -->
+  <div class="row" style="margin-top: 10vh">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <table style="width: 50%;" id="scoreTable">
+        <tr>
+          <th>Name</th>
+          <th>Score</th>
+        </tr>
+        <tr>
+          <td>Kyle</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Leon</td>
+          <td>1000000</td>
+        </tr>
+      </table>
+
+      Add Score! (will prompt twice)
+      <form name="scoreForm" action="#">
+        <label for="score">Score:</label>
+        <input type="text" name="score">
+        <input type="submit" value="Submit" onclick="addScore(document.scoreForm.score)">
+      </form>
+
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+
+
   <!-- ====================================================== -->
   <!-- ====================================================== -->
   <footer>
