@@ -1,6 +1,15 @@
 # AD - SBA - HTML/CSS/JavaScript
 
 
+### Delivearble
+* I added 3 pages, each using their own HTMl, CSS, and Javascript.
+
+* The website has a "game" for the user to play and an area to enter their email as well as enter their own scores as a guest.
+
+* It also explains upon creating games in javascript, as well as my experience creating this website.
+
+* Website link: https://davidkburchett.github.io/sba.javascript_3-page-website/
+
 
 ### Description
 * In this Skill-based Assessment, you will be creating a small website and you get to pick what is the website about. The main purpose of this SBA is to test your skills in implementing a clean HTML structure that follows the methodologies of visual design, and styling your site so that it is user-friendly.

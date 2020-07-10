@@ -1,3 +1,4 @@
+// game
 function changeColor() {
     var randomColor = colors[Math.floor(Math.random() * colors.length)];
     ball.style.backgroundColor = randomColor;
@@ -13,6 +14,7 @@ function changeParagraph() {
     }
 }
 
+// Email
 function ValidateEmail(mail) {
     var mailRegex = /\S+@\S+\.\S+/;
  if (mail.value.match(mailRegex))
@@ -23,6 +25,7 @@ function ValidateEmail(mail) {
     return (false)
 }
 
+// Score
 function addScore(score){
     while(!(-Infinity < score && score < Infinity)){
         score = prompt("please enter a valid score")
@@ -35,6 +38,7 @@ function addScore(score){
     cell2.innerHTML = score;
 }
 
+// Variables
 var ball = document.getElementById("ball");
 var dropDown = document.getElementById("dropDown")
 var paragraph = document.getElementById("instructionsP")
