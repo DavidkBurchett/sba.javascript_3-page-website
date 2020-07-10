@@ -9,6 +9,7 @@ h1{
 
 p{
     font-family: monospace;
+    line-height: 1.7;
 }
 
 #ball{
@@ -17,4 +18,49 @@ p{
     background-color: red;
     border-radius: 50%;
     display: inline-block;
+    animation-name: ball;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}
+
+@keyframes ball {
+    0%{
+        -webkit-transform: translate(0%, 0%);
+    }
+
+    50%{
+        -webkit-transform: translate(1800%, 1650%);
+    }
+
+    100%{
+        -webkit-transform: translate(3700%, 10%);
+    }
+}
+
+#bar{
+    height: 25px;
+    width: 100px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    top: 45vh;
+    animation-name: bar;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}
+
+@keyframes bar {
+    0%{
+        -webkit-transform: translate(0, 0);
+    }
+
+    50%{
+        -webkit-transform: translate(370%, 0);
+    }
+
+    100%{
+        -webkit-transform: translate(800%, 0);
+    }
 }

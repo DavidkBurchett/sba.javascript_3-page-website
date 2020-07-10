@@ -1,5 +1,9 @@
+function changeColor() {
+    var randomColor = colors[Math.floor(Math.random() * colors.length)];
+    ball.style.backgroundColor = randomColor;
+};
+
 var ball = document.getElementById("ball");
 
-function changeColor() {
-    ball.style.backgroundColor = "blue";
-};
+var colors = ["red", "blue", "purple", "yellow", "green", "white", "brown", "orange"]
+
